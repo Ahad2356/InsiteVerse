@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C4137" />
+      <stop offset="100%" stop-color="#072A23" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06D6A0" />
+      <stop offset="100%" stop-color="#46edd0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="5" y="5" width="90" height="90" rx="28" fill="url(#bgGrad)" stroke="#06D6A0" stroke-width="2" stroke-opacity="0.4"/>
+  
+  <!-- Outer Animated Orbit Ring -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="url(#emeraldGrad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="140 60">
+    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Inner Geometric Insight Core -->
+  <circle cx="50" cy="50" r="14" fill="#06D6A0" />
+  <circle cx="50" cy="50" r="7" fill="#E6FBF6" />
+</svg>
